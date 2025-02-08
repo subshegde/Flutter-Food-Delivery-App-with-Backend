@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:subshegde_food_delivery_app/pages/auth/pages/login.dart';
+import 'package:subshegde_food_delivery_app/pages/auth/pages/togglePages.dart';
 import 'package:subshegde_food_delivery_app/themes/theme_provider.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Food Delivery',
-      home: const Login(),
+      home:  const TogglePages(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
